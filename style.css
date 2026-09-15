@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+.topo {
+    background-color: grey;
+    padding: 16px 32px;
+}
+
+.topo-tudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
