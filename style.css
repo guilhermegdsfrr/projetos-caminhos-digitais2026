@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 20px;
+    background-color: #E2DBBE;
 }
 
 a {
@@ -15,7 +15,7 @@ a:hover {
 }
 
 .topo {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(24, 143, 167);
     padding: 16px 32px;
 }
 
@@ -31,8 +31,14 @@ a:hover {
 }
 
 .botao {
-    background-color: rgb(254, 116, 3);
+    background-color: rgb(118, 159, 182);
     padding: 15px 20px;
+    border-radius: 10em;
+}
+
+.botaocompra {
+    background-color: rgb(118, 159, 182);
+    padding: 2px 15px;
     border-radius: 10em;
 }
 
@@ -44,16 +50,29 @@ a:hover {
 .produtos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
 }
 
-.produto{
-    background-color: brown;
-    border-radius: 20px;
+.produto {
+    background-color: rgb(157, 187, 174);
+    border-radius: 15px;
+    border: 2px solid rgb(7, 7, 7);
 }
 
-img{
-    width: 300px;
+.logoimagem {
+    width: 550px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.sobre{
+    display: flex;
+    text-align: center;
+}
+
+
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
