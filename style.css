@@ -27,7 +27,7 @@ a:hover {
 
 .apresentacao {
     text-align: center;
-    padding-top: 36px;
+    padding-top: 46px;
 }
 
 .botao {
@@ -51,28 +51,43 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    padding: 25px;
 }
 
 .produto {
     background-color: rgb(157, 187, 174);
     border-radius: 15px;
-    border: 2px solid rgb(7, 7, 7);
 }
 
-.logoimagem {
-    width: 550px;
+.info {
+    text-align: right width: 50px;
+    padding-top: 100px
+}
+
+.descido-tudo {
+    text-autospace: initial;
+    text-align: right;
+    text-align: center;
+}
+
+.final {
+    background-color: rgb(24, 143, 167);
+    padding: 16px 32px;
+}
+
+.fundo {
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+img {
+    width: 250px;
     height: auto;
     border-radius: 10px;
 }
 
-.sobre{
-    display: flex;
-    text-align: center;
-}
-
-
-img {
-    width: 250px;
+.logoimagem {
+    width: 350px;
     height: auto;
     border-radius: 10px;
 }
