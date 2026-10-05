@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -11,19 +10,22 @@ a {
     text-decoration: none;
 }
 
+
 .caixa {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
+
 .topo {
     background-color: rgb(24, 143, 167);
-    padding: 30px 10px;
+    padding: 18px 0;
 }
 
 .topo-tudo {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -51,9 +53,11 @@ a {
     color: white;
 }
 
+
+
 .apresentacao {
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 30px;
 }
 
 .apresentacao h1 {
@@ -85,8 +89,11 @@ a {
     transform: translateY(-2px);
 }
 
+
+
+
 .cardapio {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .titulo-secao {
@@ -94,6 +101,7 @@ a {
     font-size: 32px;
     margin-bottom: 40px;
 }
+
 
 .produtos {
     display: grid;
@@ -103,15 +111,13 @@ a {
     gap: 30px;
 }
 
+
+
 .produto {
     background-color: rgb(157, 187, 174);
 
     border-radius: 15px;
     overflow: hidden;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-
-    transition: 0.2s;
 }
 
 .produto:hover {
@@ -142,6 +148,7 @@ a {
     color: #444;
 }
 
+
 .produto-rodape {
     display: flex;
     justify-content: space-between;
@@ -171,6 +178,7 @@ a {
     color: white;
 }
 
+
 .sobre {
     padding: 80px 0;
 }
@@ -180,9 +188,9 @@ a {
     align-items: center;
     gap: 50px;
 
-    background-color: rg1ba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
 
-    padding: 1px;
+    padding: 40px;
 
     border-radius: 20px;
 }
@@ -205,16 +213,16 @@ a {
 }
 
 .contato {
-    background-color: rgb(24, 143, 167);
+    background-color: #188fa7;
 
-    padding: 20px 0;
+    padding: 5px 0;
 
     text-align: center;
 }
 
 .contato h2 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .contato p {
@@ -222,17 +230,6 @@ a {
     font-size: 17px;
 }
 
-.detalhe-info {
-    background-color: rgb(107, 127, 131);
-
-    padding: 20px 0;
-
-    text-align: center;
-}
-
-img .detalhe-info {
-    
-}
 
 @media (max-width: 800px) {
 
@@ -243,7 +240,6 @@ img .detalhe-info {
     .sobre-conteudo {
         flex-direction: column;
         text-align: center;
-        padding: 30px;
     }
 
     .apresentacao h1 {
@@ -282,5 +278,102 @@ img .detalhe-info {
     .logoimagem {
         width: 100%;
         max-width: 300px;
+    }
+}
+
+:root {
+    --fundo-produto: #188fa7;
+}
+
+.detalhe {
+    padding: 40px 0 20px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 10px 20px;
+    background: #97473e;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.voltar::before {
+    content: "\2190  ";
+}
+
+.voltar:hover {
+    background: #a53125;
+}
+
+.voltar:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 2px;
+}
+
+.detalhe-grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: var(--fundo-produto);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.detalhe-foto img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.detalhe-info h1 {
+    margin: 0 0 16px;
+}
+
+.detalhe-descricao {
+    line-height: 1.6;
+    margin: 0 0 24px;
+    max-width: 55ch;
+}
+
+.detalhe-preco {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.botao-comprar {
+    display: inline-block;
+}
+
+.ingredientes {
+    padding: 20px 0 60px;
+}
+
+.lista-ingredientes {
+    list-style: disc;
+    margin: 0;
+    padding: 20px 24px 20px 44px;
+    line-height: 1.8;
+    background: var(--fundo-produto);
+    border-radius: 12px;
+}
+
+.lista-ingredientes li {
+    padding: 4px 0;
+}
+
+/* Celular */
+@media (max-width: 700px) {
+    .detalhe-grade {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
